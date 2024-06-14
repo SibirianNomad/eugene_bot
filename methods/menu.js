@@ -1,5 +1,5 @@
 export const showMenu = (bot, chatId) => {
-    bot.telegram.sendMessage(chatId, "Выбирете действия", {
+    bot.telegram.sendMessage(chatId, "Выберите действия", {
       reply_markup: {
         keyboard: [
           [

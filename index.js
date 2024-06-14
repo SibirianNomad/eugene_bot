@@ -13,7 +13,7 @@ bot.start((ctx) =>
 bot.on("message", async (ctx) => {
   const chatId = ctx.chat.id;
 
-  if (ctx.message.text == "меню") {
+  if (ctx.message.text == "меню" || ctx.message.text == "Меню") {
     showMenu(bot, chatId);
   } else if (ctx.message.location) {
     let weather = await getWeather(ctx);
